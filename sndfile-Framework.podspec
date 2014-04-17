@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
 
   s.source_files = 'sndfile.framework/Versions/A/Headers/*.h'
-  s.ios.vendored_frameworks = 'sndfile.framework'
-  s.osx.vendored_frameworks = 'sndfile.framework'
+  s.vendored_frameworks = 'sndfile.framework'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)' }
   s.preserve_paths = 'sndfile.framework'
 end
